@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/kyokomi/emoji/v2"
+)
 
 func main() {
-	fmt.Println("Hello, world!")
+	msgStr := emoji.Sprint("Hello, world! :balloon:")
+	fmt.Println(msgStr)
 }
