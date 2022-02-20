@@ -1,5 +1,7 @@
-package solution
+package main
 
-func GetMessage() string {
-	return ""
+import "fmt"
+
+func main() {
+	fmt.Println("Hello, world!")
 }
