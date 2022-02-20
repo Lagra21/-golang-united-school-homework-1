@@ -6,11 +6,15 @@ import (
 	"github.com/kyokomi/emoji/v2"
 )
 
-func ShowWorld() {
-	msgStr := emoji.Sprint("Hello :map:!")
-	fmt.Println(msgStr)
+func GetWorldTxt() string {
+	return emoji.Sprint(":map:")
+}
+
+func ShowHelloWorld() {
+	worldTxt := GetWorldTxt()
+	fmt.Println("Hello " + worldTxt + "!")
 }
 
 func main() {
-	ShowWorld()
+	ShowHelloWorld()
 }
