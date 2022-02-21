@@ -9,14 +9,18 @@ import (
 )
 
 func TestGetWorld(t *testing.T) {
+	testRes := "ok"
 	tstStr := GetWorldTxt()
-	refStr := emoji.Sprint(":worldmap:")
+	refStr := emoji.Sprint(":map:")
 	if tstStr != refStr {
+		testRes = "fail"
 		t.Errorf("%s it's not a worldmap pic ", tstStr)
 	}
+
+	t.Logf(testRes)
 }
 
-func TestWillTimeout(t *testing.T) {
+func TestTimeout(t *testing.T) {
 	time.Sleep(1 * time.Second)
 }
 
